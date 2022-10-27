@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="style.css">
+    <title>MSM Einrichtungswelt</title>
+</head>
+<body>
+<header>
+  <section> <!--section is a flexbox-->
+    <h1>MSM <br>Einrichtungswelt</h1>
+    <img class="logo" src="img/OIP.jpg" alt="logo">
+  </section>
+  <h2>Kontakt</h2>
+</header>
+<main>
+  <nav><!--nav is a flexbox-->
+    <button><a href="index.html">Hauptseite</a></button>
+    <button><a href="produktlinien.html">Produktlinien</a></button>
+    <button><a href="preise&konditionen.html">Preise & Konditionen</a></button>
+  </nav>
+
+  <h2>Kontakt:</h2>
+
+
+  <div class="container">
+
+    <form>
+
+      <label for="country">Art der Anfrage</label>
+
+      <select id="country" name="country">
+        <option>Firma</option>
+        <option>Privat</option>
+        <option></option>
+      </select>
+
+
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Name..">
+
+      <label for="adress">Adresse</label>
+      <input type="text" id="adress" name="adress" placeholder="Adresse..">
+
+      <label for="tel">Telefonnummer</label>
+      <input type="text" id="tel" name="tel" placeholder="Telefonnummer..">
+
+      <label for="emailadresse">E-Mail</label>
+      <input type="text" id="emailadresse" name="emailadresse" placeholder="E-mail Adresse..">
+
+
+
+      <label for="subject">Anmerkung</label>
+      <textarea id="subject" name="subject" placeholder="text eingabe.." style="height:200px"></textarea>
+
+      <input type="submit" value="Senden">
+    </form>
+
+  </div>
+
+  <aside class="contactarrow">
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"/></svg></a>
+  </aside>
+
+
+</main>
+
+<footer>
+  <nav> <!--nav is a flexbox-->
+    <button><a href="impressum.html">Impressum</a></button>
+    <button><a href="dsgvo.html">DSGVO</a></button>
+  </nav>
+</footer>
+
+
+</body>
+</html>

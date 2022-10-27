@@ -1,0 +1,261 @@
+/*Allgemeine Formatierung*/
+body{
+    margin: 0 auto;         /*abstand aussen*/
+    box-sizing: border-box; /*wert wird nur von der äussere box genommen, es werden nicht alle boxen zusammengerechnet*/
+}
+
+img{
+    max-width:30%;          /*größe der Bilder*/
+}
+h1{
+    text-align: center;
+}
+
+/*formatierung header Box*/
+section {
+    display: flex;         /*damit es flexbox ist*/
+    justify-content: space-around;
+
+}
+h2  {
+    text-align: center;
+}
+
+h2::first-letter {
+    color: beige;
+    font-size: 200%;         /*schrifthöhe*/
+}
+/*kontaktformular*/
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: floralwhite;
+    padding: 2% 10%;
+    margin: 0;
+}
+/*preisliste*/
+.flexconditions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.flexconditions p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*überschrift konditionen erster buchstabe in farbe*/
+.conditions::first-letter {
+    color: beige;
+    font-size: 200%;
+}
+
+h3 {
+    padding-left: 10vw;
+}
+
+header {
+    background-color: lightgreen;
+    padding: 2%;             /*abstand innen*/
+}
+footer {
+    background-color: lightgreen;
+    padding: 0.1%;
+}
+
+/*logo größe definieren*/
+.logo {
+    max-width: 10%;
+    border-radius: 100%;      /*damit logo rund ist*/
+}
+
+/*Formatierung Main Box*/
+button {
+    background-color: floralwhite;
+    padding: 2%;
+}
+
+a {
+    color: darkblue;
+    font-size: 120%;  /*Schriftgröße*/
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4% 0;       /*abstand aussen*/
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    border: 12px ridge darkblue;
+    padding : 0 6%;
+
+}
+p {
+    text-align: justify;
+}
+
+.imgProduct {
+    display: flex;
+    justify-content: center;
+}
+.imgProduct img{
+    margin:1%;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+div p {
+    max-width: 40%;
+    margin-right: 10%;
+}
+
+.divList {
+    max-width: 40%;
+    margin-left: 5%;
+}
+
+.divText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+}
+
+.divText p {
+    max-width: 100%;
+}
+
+.buttons {
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 45%;
+    background-color: lightgrey;
+
+}
+
+.guide {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4%;
+    border: 12px ridge darkblue;
+    padding : 0 6%;
+}
+/*Icon Button nach oben: svg + .contactarrow*/
+svg {
+    max-width: 2%;
+    margin-left: 8%;
+}
+
+.contactarrow{
+    background-color: floralwhite;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+}
+
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 700,
+             'GRAD' 0,
+             'opsz' 48
+ }
+
+ @media screen and (max-width: 360px) {
+
+     h3, div, img, .divText, .divList,.logo, .guide {
+         display: flex;
+         flex-direction: column;
+         text-align: justify;
+     }
+
+     img,  div p, .divText, .divList, .guide {
+         max-width: 90%;
+     }
+
+     .logo {
+         max-width: 20%;
+     }
+     div p {
+         margin-right: 0;
+     }
+    svg {
+        max-width: 7%;
+    }
+    .flexconditions {
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        text-align: start;
+    }
+    table{
+        display: flex;
+        overflow-x: auto;
+
+    }
+
+ }
